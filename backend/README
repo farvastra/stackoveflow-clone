@@ -1,0 +1,81 @@
+## Q&A Platform (Stackoverflow) Backend
+
+This is the backend for the Q&A platform built with Flask. It supports user authentication, question and answer posting, commenting, topic/tag management, and more.
+
+## Tech Stack
+
+- Python
+- Flask
+- Flask-JWT-Extended
+- SQLAlchemy
+- PostgreSQL (recommended for production)
+- SQLite (used for local development and testing)
+- Alembic (for database migrations)
+
+## Project Structure
+
+app/
+├── init.py
+├── models/
+├── routes/
+├── utils/
+├── schemas/
+├── config.py
+migrations/
+
+## Features
+
+- User registration and login with JWT authentication
+- CRUD for:
+  - Questions
+  - Answers
+  - Comments
+  - Topics (tags)
+- Automatically assigns topics to questions based on title keywords
+- Role-based user identity with protected routes
+
+##  Setup Instructions
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/farvastra/stackoverflow-clone.git
+cd backend
+```
+
+##  Set up your virtual environment
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+
+## Set environment variables
+SECRET_KEY=secret
+DATABASE_URL=sqlite:///dev.db
+SCHEMA=stack_overflow
+
+## Run database migrations
+flask db upgrade
+
+
+## Seed the database
+python seed.py
+
+## Run the development server
+flask run
+
+**API Endpoints**
+
+Some key routes:
+
+POST api/auth/register - Register user
+
+POST api/auth/login - Login and get JWT
+
+POST api/questions/add - Create a question (auth required)
+
+GET api/questions/ - List all questions
+
+GET api/topics/all-topics - List all available topics
+
+
