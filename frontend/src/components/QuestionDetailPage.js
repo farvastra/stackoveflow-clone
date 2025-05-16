@@ -21,7 +21,7 @@ export default function QuestionDetailPage() {
 
 
    const fetchQuestionAndAnswers = useCallback( () => {
-  fetch(`https://stackoveflow-clone.onrender.com/api/questions/${id}`)
+  fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/questions/${id}`)
     .then((res) => res.json())
     .then((data) => {
       console.log("Fetched question data:", data);
@@ -57,7 +57,7 @@ export default function QuestionDetailPage() {
       return;
     }
 
-    fetch(`https://stackoveflow-clone.onrender.com/api/questions/${id}/comments`, {
+    fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/questions/${id}/comments`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ export default function QuestionDetailPage() {
       return;
     }
 
-    fetch(`https://stackoveflow-clone.onrender.com/api/questions/${id}`, {
+    fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/questions/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ export default function QuestionDetailPage() {
 
   const handleDeleteQuestion = () => {
     if (window.confirm("Are you sure you want to delete this question?")) {
-      fetch(`https://stackoveflow-clone.onrender.com/api/questions/${id}`, {
+      fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/questions/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -123,7 +123,7 @@ export default function QuestionDetailPage() {
   };
 
   const handleSaveEditedComment = (commentId) => {
-    fetch(`https://stackoveflow-clone.onrender.com/api/comments/${commentId}`, {
+    fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/comments/${commentId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -141,7 +141,7 @@ export default function QuestionDetailPage() {
 
   const handleDeleteComment = (commentId) => {
     if (window.confirm("Delete this answer?")) {
-      fetch(`https://stackoveflow-clone.onrender.com/api/comments/${commentId}`, {
+      fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/comments/${commentId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,

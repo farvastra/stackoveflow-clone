@@ -9,7 +9,7 @@ export default function HomePage() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('https://stackoveflow-clone.onrender.com/api/questions')
+    fetch('https://stackoverflow-clone-l1zd.onrender.com/api/questions')
       .then((res) => {
         if (!res.ok) {
           throw new Error('Failed to fetch questions');

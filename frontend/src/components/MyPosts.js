@@ -16,7 +16,7 @@ export default function MyPosts() {
       const userId = parseInt(decodedToken.sub);
       setLoggedInUserId(userId);
 
-      fetch(`https://stackoveflow-clone.onrender.com/api/questions/my-questions`, {
+      fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/questions/my-questions`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         }

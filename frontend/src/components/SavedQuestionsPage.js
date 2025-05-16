@@ -6,7 +6,7 @@ const SavedQuestionsPage = ({ userId }) => {
   const token = localStorage.getItem('token'); 
 
   useEffect(() => {
-    fetch('https://stackoveflow-clone.onrender.com/api/saves/all', {
+    fetch('https://stackoverflow-clone-l1zd.onrender.com/api/saves/all', {
       headers: {
         'Authorization': `Bearer ${token}`, 
       }

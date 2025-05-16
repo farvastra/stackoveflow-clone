@@ -20,7 +20,7 @@ export default function AskQuestionPage() {
     setError('');
     setLoading(true);
 
-    fetch('https://stackoveflow-clone.onrender.com/api/questions/add', {
+    fetch('https://stackoverflow-clone-l1zd.onrender.com/api/questions/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
