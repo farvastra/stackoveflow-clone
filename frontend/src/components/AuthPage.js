@@ -29,7 +29,7 @@ export default function AuthPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const endpoint = isLogin ? 'login' : 'register';
-    const url = `http://localhost:5000/api/auth/${endpoint}`;
+    const url = `https://stackoveflow-clone.onrender.com/api/auth/${endpoint}`;
 
     setLoading(true);
 

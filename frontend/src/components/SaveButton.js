@@ -14,7 +14,7 @@ const SaveButton = ({ userId, questionId }) => {
       setIsSaved(JSON.parse(savedState));
     } else {
 
-      fetch('http://localhost:5000/api/saves/all', {
+      fetch('https://stackoveflow-clone.onrender.com/api/saves/all', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
@@ -32,7 +32,7 @@ const SaveButton = ({ userId, questionId }) => {
 
 
   const handleSave = () => {
-    fetch('http://localhost:5000/api/saves/save-q', {
+    fetch('https://stackoveflow-clone.onrender.com/api/saves/save-q', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const SaveButton = ({ userId, questionId }) => {
   };
 
   const handleUnsave = () => {
-    fetch('http://localhost:5000/api/saves/unsave', {
+    fetch('https://stackoveflow-clone.onrender.com/api/saves/unsave', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

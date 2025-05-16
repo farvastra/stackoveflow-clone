@@ -16,10 +16,7 @@ const Sidebar = ({ isLoggedIn }) => {
         <i className="fas fa-bookmark"></i> 
         Saved Questions
       </Link>
-      {/* <Link to="/topics" className="sidebar-link">
-        <i className="fas fa-tags"></i> 
-        Topics
-      </Link> */}
+     
     </div>
   );
 };

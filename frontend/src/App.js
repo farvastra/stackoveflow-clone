@@ -40,7 +40,7 @@ function App() {
       localStorage.removeItem('token');
     }
 
-    fetch('http://localhost:5000/api/auth/me', {
+    fetch('https://stackoveflow-clone.onrender.com/api/auth/me', {
       headers: {
         'Authorization': `Bearer ${token}`,
         "Content-Type": 'application/json'

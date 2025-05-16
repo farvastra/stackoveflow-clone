@@ -20,7 +20,7 @@ export default function AskQuestionPage() {
     setError('');
     setLoading(true);
 
-    fetch('http://localhost:5000/api/questions/add', {
+    fetch('https://stackoveflow-clone.onrender.com/api/questions/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

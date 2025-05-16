@@ -16,7 +16,7 @@ export default function MyPosts() {
       const userId = parseInt(decodedToken.sub);
       setLoggedInUserId(userId);
 
-      fetch(`http://localhost:5000/api/questions/my-questions`, {
+      fetch(`https://stackoveflow-clone.onrender.com/api/questions/my-questions`, {
         headers: {
           'Authorization': `Bearer ${token}`,
         }

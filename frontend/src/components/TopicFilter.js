@@ -5,7 +5,7 @@ const TopicFilter = ({ setQuestions }) => {
   const [selected, setSelected] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/topics/all-topics')
+    fetch('https://stackoveflow-clone.onrender.com/api/topics/all-topics')
       .then(res => res.json())
       .then(setTopics);
   }, []);
@@ -17,7 +17,7 @@ const TopicFilter = ({ setQuestions }) => {
   };
 
   const fetchFilteredQuestions = () => {
-    fetch('http://localhost:5000/api/topics/questions-by-topics', {
+    fetch('https://stackoveflow-clone.onrender.com/api/topics/questions-by-topics', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
