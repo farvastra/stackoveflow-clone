@@ -8,14 +8,14 @@ const TopicManager = ({ questionId }) => {
 
   // Fetch all topics
   const fetchTopics = async () => {
-    const res = await fetch('https://stackoveflow-clone.onrender.com/api/topics/all-topics');
+    const res = await fetch('https://stackoverflow-clone-l1zd.onrender.com/api/topics/all-topics');
     if (!res.ok) throw new Error('Failed to fetch topics');
     return res.json();
   };
 
   // Add topic to a question
   const addTopicToQuestion = async (questionId, topicId) => {
-    const res = await fetch(`https://stackoveflow-clone.onrender.com/api/topics/${questionId}/add`, {
+    const res = await fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/topics/${questionId}/add`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ const TopicManager = ({ questionId }) => {
 
   // Remove topic from a question
   const removeTopicFromQuestion = async (questionId, topicId) => {
-    const res = await fetch(`https://stackoveflow-clone.onrender.com/api/topics/${questionId}/remove`, {
+    const res = await fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/topics/${questionId}/remove`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const TopicManager = ({ questionId }) => {
       .then(setTopics)
       .catch(err => console.error('Failed to fetch topics', err));
 
-    fetch(`https://stackoveflow-clone.onrender.com/api/topics/${questionId}`)
+    fetch(`https://stackoverflow-clone-l1zd.onrender.com/api/topics/${questionId}`)
       .then(res => res.json())
       .then(data => setSelectedTopics(data.map(topic => topic.id)))
       .catch(err => console.error('Failed to fetch question topics', err));
