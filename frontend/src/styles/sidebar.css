@@ -35,3 +35,15 @@
 .sidebar-link:hover i {
   color: #007bff; 
 }
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 0%;
+    position: static;
+    height: auto;
+    padding: 0.5rem;
+    box-shadow: none;
+  }
+
+  
+  
+}
