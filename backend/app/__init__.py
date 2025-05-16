@@ -21,8 +21,13 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
     jwt.init_app(app)
-    CORS(app, resources={r"/api/*": {"origins": ["https://stackoveflow-clone.onrender.com"]}}, supports_credentials=True)
-
+    # CORS(app, resources={r"/api/*": {"origins": ["https://stackoveflow-clone.onrender.com"]}}, supports_credentials=True)
+    CORS(app, origins=[
+    "http://localhost:3000", 
+    "https://stackoveflow-clone.onrender.com"
+    ], supports_credentials=True)
+    CORS(app, resources={r"/*": {"origins": "*"}})  
+    
     # Simple test routes
     @app.route("/")
     def home():
