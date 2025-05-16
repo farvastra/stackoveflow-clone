@@ -1,0 +1,79 @@
+.divider {
+  margin: 20px auto;
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+}
+.my-posts-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.my-posts-page h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.my-posts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-posts-list li {
+  width: 80%;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.my-posts-list h3 {
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.my-posts-list p {
+  margin: 0;
+  color: #555;
+}
+
+.full-width-btn {
+  width: 80%;
+  padding: 12px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.full-width-btn:hover {
+  background-color: #0056b3;
+}
+
+.ask-btn {
+  width: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.ask-btn:hover {
+  background-color: #218838;
+}

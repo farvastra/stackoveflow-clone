@@ -1,0 +1,59 @@
+.ask-question {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.ask-question h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ask-question .form-group {
+  margin-bottom: 15px;
+}
+
+.ask-question label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ask-question input,
+.ask-question textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.ask-question input:focus,
+.ask-question textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+}
+
+.ask-question button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ask-question button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.ask-question .error {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}

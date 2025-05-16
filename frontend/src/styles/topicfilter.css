@@ -1,0 +1,53 @@
+.topic-filter {
+  padding: 1.5rem;
+}
+
+.topic-checkboxes {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topic-label {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.filter-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #005fa3;
+}
+
+.question-list {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+
+.question-list li {
+  margin-bottom: 0.5rem;
+}
+#search-topic {
+  width: fit-content !important;
+  padding: 0.5rem 1.2rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+
+#search-topic:hover {
+  background-color: #005fa3;
+}

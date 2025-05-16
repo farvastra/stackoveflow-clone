@@ -1,0 +1,138 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f8f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-left {
+  flex: 1;
+}
+    
+.navbar-logo {
+  text-decoration: none;
+}
+
+.logo {
+  height: 30px;
+}
+
+.navbar-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.navbar-link:hover {
+  color: #4f46e5;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin-right: 30px;
+}
+
+.navbar-search {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.navbar-auth {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.navbar-auth:hover {
+  opacity: 0.9;
+}
+
+#sign-up {
+  background-color: #0a95ff;
+  color: white;
+  border: none;
+}
+
+#sign-up:hover {
+  background-color: #007cd6;
+}
+
+.navbar-auth[href*="login"] {
+  background: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.navbar-auth[href*="login"]:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+button.navbar-auth {
+  background: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+button.navbar-auth:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+#sign-up, #login{
+    width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+  }
+
+  .navbar-center {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-auth {
+    width: 100%;
+  }
+}
