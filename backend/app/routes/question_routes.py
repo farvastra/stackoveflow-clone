@@ -36,7 +36,7 @@ def create_question():
 
 
 # Get all Questions
-@question_bp.route('/', methods=['GET'])
+@question_bp.route('/all', methods=['GET'])
 def get_all_questions():
     questions = Question.query.all()
     return jsonify([q.to_dict(include_comments=True) for q in questions]), 200
