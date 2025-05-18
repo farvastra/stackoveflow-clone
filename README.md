@@ -56,11 +56,11 @@ npm start
 
 ## Screenshots
 
-**Homepage Screenshot**  ![Homepage](public/homepage.png)
+**Homepage Screenshot**  ![Homepage](./frontend/public/homepage.png)
 
-**detailspage screenshot** ![QuestionDetailsPage](public/questiondetailpage.png)
+**detailspage screenshot** ![QuestionDetailsPage](./frontend/public/questiondetailpage.png)
 
-**detailspage screenshot** ![QuestionDetailsPage](public/questiondetailpage-2.png)
+**detailspage screenshot** ![QuestionDetailsPage](./frontend/public/questiondetailpage-2.png)
 
 
 ## API Integration
