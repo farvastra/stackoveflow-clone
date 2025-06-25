@@ -13,6 +13,7 @@
 
 .save-btn:hover {
   background-color: #005fa3;
+  color: white
 }
 
 .save-btn.saved {
