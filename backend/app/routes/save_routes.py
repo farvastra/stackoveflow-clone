@@ -43,7 +43,7 @@ def unsave_question():
 
     save_entry = Save.query.filter_by(user_id=user_id, question_id=question_id).first()
     if not save_entry:
-        return jsonify({"message": "Save entry not found"}), 404
+        return jsonify({"message": "Save entry not found, try again"}), 404
 
     db.session.delete(save_entry)
     db.session.commit()
