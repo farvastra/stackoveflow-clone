@@ -27,7 +27,7 @@ export default function MyPosts() {
           return res.json();
         })
         .then(data => {
-          console.log("Response status:", data);
+          console.log("Response Status:", data);
           setMyQuestions(data || []);
           setIsLoading(false);
         })
