@@ -10,7 +10,7 @@ This is the frontend for the Q&A platform built with React. It provides a user i
 - **CSS** – Basic styling and layout
 - **LocalStorage** – Persistence for JWT tokens and user sessions
 
-## 📁 Project Structure
+## Project Structure
 
 src/
 ├── components/ # Reusable UI components (Navbar, Forms, Cards, etc.)
