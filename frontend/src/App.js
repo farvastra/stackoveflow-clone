@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import {jwtDecode} from 'jwt-decode';
 import AuthPage from './components/AuthPage';
 import HomePage from './components/HomePage';
+import Sidebar from './components/SideBar';
 import AskQuestionPage from './components/AskQuestionPage';
 import QuestionDetailPage from './components/QuestionDetailPage';
 import MyPosts from './components/MyPosts';
 import NavBar from './components/NavBar';
 import SavedQuestionsPage from './components/SavedQuestionsPage';
-import Sidebar from './components/SideBar';
+
 import "./App.css"
 
 function App() {
@@ -93,5 +94,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
