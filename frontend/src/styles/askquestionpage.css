@@ -34,7 +34,7 @@
 .ask-question input:focus,
 .ask-question textarea:focus {
   outline: none;
-  border-color: #0077cc;
+  border-color: #0283df;
 }
 
 .ask-question button {
