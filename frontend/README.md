@@ -15,10 +15,10 @@ This is the frontend for the Q&A platform built with React. It provides a user i
 src/
 ├── components/ # Reusable UI components (Navbar, Forms, Cards, etc.)
 ├── pages/ # Route-level pages (Home, Login, Signup, QuestionDetails, etc.)
-├── utils/ # Helper functions (e.g., API handlers, auth)
-├── App.js # Root component and route definitions
-├── App.css # Global styles
-└── index.js # Application entry point
+├── utils/ # Helper functions (e.g., API handlers, auth.)
+├── App.js # Root component and route definitions.
+├── App.css # Global styles.
+└── index.js # Application entry point.
 
 
 ## Features
