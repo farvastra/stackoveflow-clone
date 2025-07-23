@@ -5,7 +5,7 @@
 ## Frontend
 This is the frontend for the Q&A platform built with React. It provides a user interface for browsing and posting questions, managing answers, comments, and topics.
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - **React** – Component-based frontend UI
 - **React Router** – Client-side routing
@@ -13,7 +13,7 @@ This is the frontend for the Q&A platform built with React. It provides a user i
 - **CSS** – Basic styling and layout
 - **LocalStorage** – Persistence for JWT tokens and user sessions
 
-## 📁 Project Structure
+## Project Structure
 
 src/
 ├── components/ # Reusable UI components (Navbar, Forms, Cards, etc.)
@@ -38,7 +38,7 @@ src/
 - Persist JWT authentication
 
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 1. **Clone the repository**
 
