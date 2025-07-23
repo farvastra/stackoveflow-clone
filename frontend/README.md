@@ -2,7 +2,7 @@
 ## Q&A Platform (Stackoverflow)  ## Frontend
 This is the frontend for the Q&A platform built with React. It provides a user interface for browsing and posting questions, managing answers, comments, and topics.
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - **React** – Component-based frontend UI
 - **React Router** – Client-side routing
