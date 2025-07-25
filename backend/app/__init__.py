@@ -15,7 +15,7 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(Configuration)
 
-    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your-default-secret-key')
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'supersecretkey')
     app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(days=7)
 
     db.init_app(app)
