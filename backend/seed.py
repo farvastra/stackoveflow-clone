@@ -16,7 +16,7 @@ with app.app_context():
         db.session.add(user)
         db.session.commit()
 
-    # Define 15 programming-related topics
+    
     topic_names = [
         "JavaScript", "React", "Node.js", "Express.js", "MongoDB",
         "HTML", "CSS", "Python", "Flask", "Django",
