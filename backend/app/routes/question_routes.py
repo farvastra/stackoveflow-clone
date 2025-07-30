@@ -80,7 +80,7 @@ def delete_question(question_id):
     db.session.delete(question)
     db.session.commit()
 
-    return {"message": "Question and related comments deleted."}
+    return {"message": "Question and related comments deleted"}
 
 # add comment to a question
 @question_bp.route('/<int:question_id>/comments', methods=['POST'])
