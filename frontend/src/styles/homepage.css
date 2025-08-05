@@ -24,14 +24,14 @@
 }
 
 .ask-question-btn:hover {
-  background-color: #0074cc;
+  background-color: #0280e1;
 }
 
 .question-card {
   border: 1px solid #ddd;
   padding: 16px;
   border-radius: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   background-color: #fff;
 }
 
