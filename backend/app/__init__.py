@@ -33,7 +33,7 @@ def create_app():
     def home():
         return {"message": "Welcome to the Q&A API!"}, 200
 
-    # Register blueprints
+    
     from .routes.auth_routes import auth_bp
     from .routes.question_routes import question_bp
     from .routes.comment_routes import comment_bp
