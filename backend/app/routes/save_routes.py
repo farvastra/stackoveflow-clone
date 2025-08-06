@@ -27,7 +27,7 @@ def save_question():
     db.session.add(new_save)
     db.session.commit()
 
-    return jsonify({"message": "Question saved successfully"}), 201
+    return jsonify({"message": "Question successfully saved"}), 201
 
 
 # Unsave a Question
