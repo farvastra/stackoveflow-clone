@@ -1,7 +1,6 @@
 
 ## Q&A Platform (Stackoverflow) fullstack
 
-
 ## Frontend
 This is the frontend for the Q&A platform built with React. It provides a user interface for browsing and posting questions, managing answers, comments, and topics.
 
@@ -67,9 +66,6 @@ npm start
 All API requests are made to the backend server using javascript fetch. 
 JWT tokens are stored in localStorage for persistent authentication.
 Headers are automatically attached to secure routes for authenticated users.
-
-
-
 
 
 ## Backend

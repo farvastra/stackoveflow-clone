@@ -68,14 +68,14 @@ flask run
 
 Some key routes:
 
-POST api/auth/register - Register user
+POST api/auth/register - Register user.
 
-POST api/auth/login - Login and get JWT
+POST api/auth/login - Login and get JWT.
 
-POST api/questions/add - Create a question (auth required)
+POST api/questions/add - Create a question (auth required).
 
-GET api/questions/ - List all questions
+GET api/questions/ - List all questions.
 
-GET api/topics/all-topics - List all available topics
+GET api/topics/all-topics - List all available topics.
 
 
