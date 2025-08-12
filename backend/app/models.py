@@ -106,7 +106,7 @@ class Topic(db.Model):
     def __repr__(self):
         return f'<Topic {self.name}>'
 
-
+#Question-Topic Association Table
 class QuestionTopics(db.Model):
     __tablename__ = 'question_topics'
 
