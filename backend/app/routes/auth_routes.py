@@ -32,7 +32,7 @@ def register():
         return jsonify({"message": "Username already exists"}), 400
 
     if User.query.filter_by(email=email).first():
-        return jsonify({"message": "Email already registered"}), 400
+        return jsonify({"message": "Email has already been registered"}), 400
 
     password_hash = generate_password_hash(password)
     
