@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from app import db
-from app.models import Comment, Question, User
+from app.models import Comment, Question
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
 comment_bp = Blueprint('comments', __name__)
@@ -18,7 +18,7 @@ def get_comments(question_id):
 
     return jsonify(comments_list), 200
 
-#pdate a comment
+#Update a comment
 @comment_bp.route('/<int:comment_id>', methods=['PUT'])
 @jwt_required()
 def update_comment(comment_id):
@@ -34,7 +34,7 @@ def update_comment(comment_id):
 
     return jsonify({"message": "Comment updated successfully"}), 200
 
-#delete a comment
+#Delete a comment
 @comment_bp.route('/<int:comment_id>', methods=['DELETE'])
 @jwt_required()
 def delete_comment(comment_id):
