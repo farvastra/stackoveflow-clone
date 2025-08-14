@@ -20,7 +20,7 @@ with app.app_context():
     topic_names = [
         "JavaScript", "React", "Node.js", "Express.js", "MongoDB",
         "HTML", "CSS", "Python", "Flask", "Django",
-        "SQL", "PostgreSQL", "TypeScript", "Redux", "API"
+        "SQL", "PostgreSQL", "TypeScript", "Redux", "API", "Web Development"
     ]
     topics = [Topic(name=name) for name in topic_names]
     db.session.add_all(topics)
