@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from app import db
-from app.models import Question, User, Comment
+from app.models import Question, Comment
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from app.utils import assign_topics_to_question
 question_bp = Blueprint('questions', __name__)
