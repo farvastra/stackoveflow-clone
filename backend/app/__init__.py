@@ -28,10 +28,10 @@ def create_app():
     ], supports_credentials=True)
     CORS(app, resources={r"/*": {"origins": "*"}})  
     
-    # Simple test routes
+    #Home test routes
     @app.route("/")
     def home():
-        return {"message": "Welcome to the Q&A API"}, 200
+        return {"message": "Welcome to the Question & Answer API"}, 200
 
     
     from .routes.auth_routes import auth_bp
