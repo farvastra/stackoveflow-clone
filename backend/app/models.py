@@ -2,7 +2,7 @@ from . import db
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 
-
+# User model
 class User(db.Model):
     __tablename__ = 'users'
 
@@ -20,7 +20,7 @@ class User(db.Model):
     def __repr__(self):
        return f"<User id={self.id} username='{self.username}'>"
 
-
+# Question model
 class Question(db.Model):
     __tablename__ = 'questions'
 
@@ -58,7 +58,7 @@ class Question(db.Model):
     def __repr__(self):
        return f"<Question id={self.id} title='{self.title}'>"
 
-
+# Save model
 class Save(db.Model):
     __tablename__ = 'saves'
 
@@ -72,7 +72,7 @@ class Save(db.Model):
     
     def __repr__(self):
         return f"<Save user_id={self.user_id} question_id={self.question_id}>"
-
+# Comment model
 class Comment(db.Model):
     __tablename__ = 'comments'
 
@@ -94,7 +94,7 @@ class Comment(db.Model):
         }
 
 
-
+# Topic model
 class Topic(db.Model):
     __tablename__ = 'topics'
 
