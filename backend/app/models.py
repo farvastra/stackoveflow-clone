@@ -93,7 +93,6 @@ class Comment(db.Model):
             "user_id": self.user_id
         }
 
-
 # Topic model
 class Topic(db.Model):
     __tablename__ = 'topics'
