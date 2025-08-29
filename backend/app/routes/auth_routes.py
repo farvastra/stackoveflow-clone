@@ -11,7 +11,7 @@ jwt = JWTManager()
 
 @auth_bp.route('/', methods=['GET'])
 def home():
-    return jsonify({"message": "API is running"}), 200
+    return jsonify({"message": "API is now running"}), 200
 
 
 
