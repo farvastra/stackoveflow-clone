@@ -23,7 +23,6 @@ def create_question():
     assign_topics_to_question(new_question)
 
     db.session.commit()
-
     return jsonify({
         "message": "Question created successfully",
         "question_id": new_question.id,
@@ -59,7 +58,7 @@ def update_question(question_id):
     question = Question.query.get_or_404(question_id)
 
     if question.user_id != user_id:
-        return jsonify({"message": "Unauthorized"}), 403
+        return jsonify({"message": "Unauthorized user"}), 403
 
     data = request.get_json()
     question.title = data.get('title', question.title)
