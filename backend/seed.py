@@ -1,6 +1,6 @@
 from werkzeug.security import generate_password_hash
 from app import create_app, db
-from app.models import Question, User, Topic  # Make sure Topic is imported
+from app.models import Question, User, Topic  
 
 app = create_app()
 
