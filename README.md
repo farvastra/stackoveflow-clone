@@ -70,7 +70,7 @@ Headers are automatically attached to secure routes for authenticated users.
 
 ## Backend
 
-This is the backend for the Q&A platform built with Flask. It supports user authentication, question and answer posting, commenting, topic/tag management, and more.
+This is the backend for the Q&A platform built with Flask. It supports user authentication, questions and answers posting, commenting, topic/tag management, and more.
 
 ## Tech Stack
 
