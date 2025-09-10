@@ -31,7 +31,7 @@ def create_app():
     #Home test routes
     @app.route("/")
     def home():
-        return {"message": "Welcome to the Question & Answer API"}, 200
+        return {"message": "Welcome to the Stackoverflow Question & Answer"}, 200
 
     
     from .routes.auth_routes import auth_bp
