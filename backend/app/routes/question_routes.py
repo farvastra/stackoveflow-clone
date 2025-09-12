@@ -58,7 +58,7 @@ def update_question(question_id):
     question = Question.query.get_or_404(question_id)
 
     if question.user_id != user_id:
-        return jsonify({"message": "Unauthorized user"}), 403
+        return jsonify({"message": "This user is unauthorized"}), 403
 
     data = request.get_json()
     question.title = data.get('title', question.title)
