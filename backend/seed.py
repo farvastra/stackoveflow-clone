@@ -35,7 +35,7 @@ with app.app_context():
         {"title": "What is the difference between let,var and const in JavaScript?", "content": "I understand var, but I’m not sure how let and const differ in terms of scoping and usage."},
         {"title": "How do I make an API call in React?", "content": "I'm using Axios, but the data isn’t being fetched as expected. How can I troubleshoot this?"},
         {"title": "What are React hooks and how do they work?", "content": "I’m familiar with classes in React, but how do hooks compare and when should they be used?"},
-        {"title": "How do you manage state in React?", "content": "Im having trouble managing state in larger React applications. What’s the best approach?"}
+        {"title": "How do you manage state in React?", "content": "Im having trouble managing state in larger React applications. What is the best approach?"}
     ]
 
     def get_topics_for_question(title):
