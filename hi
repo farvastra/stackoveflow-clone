@@ -1,0 +1,11 @@
+import random
+
+# Generate a list of 10 random numbers between 1 and 100
+numbers = [random.randint(1, 100) for _ in range(10)]
+
+# Calculate the average
+average = sum(numbers) / len(numbers)
+
+# Print the results
+print(f"Random numbers: {numbers}")
+print(f"Average: {average:.2f}")
